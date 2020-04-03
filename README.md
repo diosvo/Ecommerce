@@ -1,3 +1,4 @@
 # Ecommerce
 Use gulp, npm, pug, sass, DOM. 
-Mainpage: dist/html/index.html
+#Mainpage
+dist/html/index.html
