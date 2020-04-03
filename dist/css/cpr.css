@@ -1,17 +1,22 @@
 div.copyright {
-  color: gray;
-  width: 86%;
-  height: 1.5rem;
+  color           : gray;
+  width           : 86%;
+  height          : 1.5rem;
   background-color: #2b2b2b;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  align-items: center; }
-  div.copyright i {
-    margin-left: 3rem;
-    font-size: 10px; }
-  div.copyright span {
-    margin-left: 5px;
-    font-family: sans-serif;
-    font-size: 10px;
-    text-transform: uppercase; }
+  margin          : 0 auto;
+  padding         : 0;
+  display         : flex;
+  align-items     : center;
+}
+
+div.copyright i {
+  margin-left: 3rem;
+  font-size  : 10px;
+}
+
+div.copyright span {
+  margin-left   : 5px;
+  font-family   : sans-serif;
+  font-size     : 10px;
+  text-transform: uppercase;
+}

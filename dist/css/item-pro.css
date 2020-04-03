@@ -1,71 +1,96 @@
 @import url(..font/NotoSansHK/style.css);
 @import url(..font/Playfair/style.css);
+
 .linear {
-  background: linear-gradient(60deg, #667eea, #764ba2); }
+  background: linear-gradient(60deg, #667eea, #764ba2);
+}
 
 .section-lo {
-  width: 86%;
-  margin: 0 auto;
-  font-family: 'Playfair Display'; }
+  width      : 86%;
+  margin     : 0 auto;
+  font-family: 'Playfair Display';
+}
 
 .ct-right {
   float: right;
   width: 45%;
-  clear: both; }
+  clear: both;
+}
 
 .ct-left {
   float: left;
-  width: 45%; }
+  width: 45%;
+}
 
 .flex-hor {
-  display: flex;
-  flex-direction: column;
+  display        : flex;
+  flex-direction : column;
   justify-content: space-around;
-  align-items: center; }
+  align-items    : center;
+}
 
 .item-pro ul.pro-container {
-  margin: 0;
-  display: grid;
+  margin               : 0;
+  display              : grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 2fr);
-  grid-column-gap: 2px;
-  grid-row-gap: 2px; }
-  .item-pro ul.pro-container li.item {
-    display: float;
-    clear: both;
-    width: 12rem;
-    height: 16rem;
-    margin: 1rem 0 5rem 2.55rem;
-    list-style-type: none; }
-    .item-pro ul.pro-container li.item img {
-      margin: 0 auto;
-      width: 12rem;
-      height: 16rem; }
-    .item-pro ul.pro-container li.item .item-name {
-      float: left;
-      margin: 3px 0; }
-      .item-pro ul.pro-container li.item .item-name a {
-        font-family: 'PlayFair Display';
-        color: black;
-        text-decoration: none;
-        font-size: 14px; }
-        .item-pro ul.pro-container li.item .item-name a:hover {
-          font-weight: bold; }
-    .item-pro ul.pro-container li.item p.money {
-      color: red;
-      font-size: 13px; }
-    .item-pro ul.pro-container li.item button {
-      float: right;
-      cursor: pointer;
-      border: none;
-      background-color: transparent;
-      position: relative; }
-      .item-pro ul.pro-container li.item button i {
-        color: #2b2b2b;
-        opacity: .4;
-        position: absolute;
-        top: .5rem;
-        left: -1.5rem;
-        font-size: 1.5rem; }
-        .item-pro ul.pro-container li.item button i:hover {
-          opacity: 1; }
+  grid-template-rows   : repeat(3, 2fr);
+  grid-column-gap      : 2px;
+  grid-row-gap         : 2px;
+}
+
+.item-pro ul.pro-container li.item {
+  display        : float;
+  clear          : both;
+  width          : 12rem;
+  height         : 16rem;
+  margin         : 1rem 0 5rem 2.55rem;
+  list-style-type: none;
+}
+
+.item-pro ul.pro-container li.item img {
+  margin: 0 auto;
+  width : 12rem;
+  height: 16rem;
+}
+
+.item-pro ul.pro-container li.item .item-name {
+  float : left;
+  margin: 3px 0;
+}
+
+.item-pro ul.pro-container li.item .item-name a {
+  font-family    : 'PlayFair Display';
+  color          : black;
+  text-decoration: none;
+  font-size      : 14px;
+}
+
+.item-pro ul.pro-container li.item .item-name a:hover {
+  font-weight: bold;
+}
+
+.item-pro ul.pro-container li.item p.money {
+  color    : red;
+  font-size: 13px;
+}
+
+.item-pro ul.pro-container li.item button {
+  float           : right;
+  cursor          : pointer;
+  border          : none;
+  background-color: transparent;
+  position        : relative;
+}
+
+.item-pro ul.pro-container li.item button i {
+  color    : #2b2b2b;
+  opacity  : .4;
+  position : absolute;
+  top      : .5rem;
+  left     : -1.5rem;
+  font-size: 1.5rem;
+}
+
+.item-pro ul.pro-container li.item button i:hover {
+  opacity: 1;
+}

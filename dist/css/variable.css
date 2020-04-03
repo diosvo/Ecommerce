@@ -1,24 +1,30 @@
 @import url(..font/NotoSansHK/style.css);
 @import url(..font/Playfair/style.css);
+
 .linear {
-  background: linear-gradient(60deg, #667eea, #764ba2); }
+  background: linear-gradient(60deg, #667eea, #764ba2);
+}
 
 .section-lo {
-  width: 86%;
-  margin: 0 auto;
-  font-family: 'Playfair Display'; }
+  width      : 86%;
+  margin     : 0 auto;
+  font-family: 'Playfair Display';
+}
 
 .ct-right {
   float: right;
   width: 45%;
-  clear: both; }
+  clear: both;
+}
 
 .ct-left {
   float: left;
-  width: 45%; }
+  width: 45%;
+}
 
 .flex-hor {
-  display: flex;
-  flex-direction: column;
+  display        : flex;
+  flex-direction : column;
   justify-content: space-around;
-  align-items: center; }
+  align-items    : center;
+}
