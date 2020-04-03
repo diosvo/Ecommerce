@@ -1,0 +1,30 @@
+div(class="bg-modal")
+    div(class="modal-content")
+        div(class="close") +
+        div(class="button-box")
+            div(id="btn" class="linear")
+            button(type="button" class="toogle-btn" onclick="login()") Log In
+            button(type="button" class="toogle-btn" onclick="register()") Register
+
+        p You can Log in/ Register with
+        div(class="social-icons")
+                img(src="../images/services/facebook.png", alt="facebook")
+                img(src="../images/services/gmail.png", alt="gmail")
+                img(src="../images/services/phone.png", alt="phone")
+
+        form(id="login" class="input-group")
+            input(type='text' class='input-field' placeholder="User ID" required)
+            input(type='password' class='input-field' placeholder="Password" required)
+            input(type='checkbox' class='check-box' name="checkbox") 
+            span Remember me?
+            button(type="submit" class="submit-btn linear") Log In
+
+        form(id="register" class="input-group")
+            input(type='text' class='input-field' placeholder="User ID" required)
+            input(type='email' class='input-field' placeholder="Email" required)
+            input(type='password' class='input-field' placeholder="Password" required)
+            input(type='checkbox' class='check-box' name="checkbox") 
+            span I agree to the term & conditions
+            button(type="submit" class="submit-btn linear") Register
+
+script(src="../js/popup.js")

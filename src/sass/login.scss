@@ -1,0 +1,143 @@
+@import 'animation.scss';
+
+.bg-modal {
+    display  : none;
+    width    : 100%;
+    height   : 100%;
+    position : absolute;
+    top      : 6rem;
+    position : fixed;
+    z-index  : 10000;
+    animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+    .modal-content {
+        position        : relative;
+        width           : 20rem;
+        height          : 28rem;
+        background-color: #fff;
+        box-shadow      : 0 0 2px 0 #2f2f2f;
+        margin          : 0 auto;
+        z-index         : 100;
+        overflow        : hidden;
+
+        .close {
+            transform: rotate(45deg);
+            position : absolute;
+            top      : 0;
+            right    : .5rem;
+            font-size: 1.5rem;
+            cursor   : pointer;
+        }
+
+        .button-box {
+            position     : relative;
+            width        : 16rem;
+            height       : 2rem;
+            margin       : 2rem;
+            box-shadow   : 0 0 5px 1px #dddddd;
+            border-radius: 2rem;
+
+            #btn {
+                position     : absolute;
+                top          : 0;
+                left         : 0;
+                width        : 50%;
+                height       : 100%;
+                border-radius: 2rem;
+                transition   : .5s;
+            }
+
+            .toogle-btn {
+                position   : relative;
+                font-family: 'Playfair Display';
+                font-size  : 14px;
+                padding    : 6px 40px;
+                cursor     : pointer;
+                background : transparent;
+                outline    : none;
+                border     : 0;
+
+            }
+        }
+
+        p {
+            font-family: 'Playfair Display';
+            font-size  : 13px;
+            position   : absolute;
+            top        : 22rem;
+            left       : 4.3rem;
+            text-align : center;
+        }
+
+        form.input-group {
+            position  : absolute;
+            top       : 6rem;
+            width     : 16rem;
+            margin    : 0 2rem;
+            transition: .5s;
+
+            .input-field {
+                font-family  : 'Playfair Display';
+                width        : 100%;
+                padding      : .7rem .5rem;
+                margin       : .5rem 0;
+                border       : 0;
+                border-bottom: .5px solid #cccccc;
+
+                input[type="password"] {
+                    -webkit-text-security: disc;
+                }
+            }
+
+            span {
+                font-family: 'Playfair Display';
+                font-size  : 13px;
+                margin-left: 5px;
+            }
+
+            .submit-btn {
+                display       : block;
+                color         : white;
+                margin        : 1rem 0.8rem;
+                font-family   : 'Playfair Display';
+                width         : 90%;
+                border-radius : 2rem;
+                padding       : .5rem 1rem;
+                cursor        : pointer;
+                border        : none;
+                opacity       : .8;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .social-icons {
+            display   : flex;
+            position  : absolute;
+            height    : 2rem;
+            top       : 23rem;
+            left      : 3.8rem;
+            text-align: center;
+
+            img {
+                margin       : 1rem;
+                width        : 2rem;
+                height       : 2rem;
+                cursor       : pointer;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    #login {
+        left: 0;
+    }
+
+    #register {
+        left: 20rem;
+    }
+}

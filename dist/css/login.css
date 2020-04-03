@@ -1,0 +1,124 @@
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(0.5rem);
+    transform: translateY(0.5rem); } }
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
+.bg-modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 6rem;
+  position: fixed;
+  z-index: 10000;
+  animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+  .bg-modal .modal-content {
+    position: relative;
+    width: 20rem;
+    height: 28rem;
+    background-color: #fff;
+    box-shadow: 0 0 2px 0 #2f2f2f;
+    margin: 0 auto;
+    z-index: 100;
+    overflow: hidden; }
+    .bg-modal .modal-content .close {
+      transform: rotate(45deg);
+      position: absolute;
+      top: 0;
+      right: .5rem;
+      font-size: 1.5rem;
+      cursor: pointer; }
+    .bg-modal .modal-content .button-box {
+      position: relative;
+      width: 16rem;
+      height: 2rem;
+      margin: 2rem;
+      box-shadow: 0 0 5px 1px #dddddd;
+      border-radius: 2rem; }
+      .bg-modal .modal-content .button-box #btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        border-radius: 2rem;
+        transition: .5s; }
+      .bg-modal .modal-content .button-box .toogle-btn {
+        position: relative;
+        font-family: 'Playfair Display';
+        font-size: 14px;
+        padding: 6px 40px;
+        cursor: pointer;
+        background: transparent;
+        outline: none;
+        border: 0; }
+    .bg-modal .modal-content p {
+      font-family: 'Playfair Display';
+      font-size: 13px;
+      position: absolute;
+      top: 22rem;
+      left: 4.3rem;
+      text-align: center; }
+    .bg-modal .modal-content form.input-group {
+      position: absolute;
+      top: 6rem;
+      width: 16rem;
+      margin: 0 2rem;
+      transition: .5s; }
+      .bg-modal .modal-content form.input-group .input-field {
+        font-family: 'Playfair Display';
+        width: 100%;
+        padding: .7rem .5rem;
+        margin: .5rem 0;
+        border: 0;
+        border-bottom: .5px solid #cccccc; }
+        .bg-modal .modal-content form.input-group .input-field input[type="password"] {
+          -webkit-text-security: disc; }
+      .bg-modal .modal-content form.input-group span {
+        font-family: 'Playfair Display';
+        font-size: 13px;
+        margin-left: 5px; }
+      .bg-modal .modal-content form.input-group .submit-btn {
+        display: block;
+        color: white;
+        margin: 1rem 0.8rem;
+        font-family: 'Playfair Display';
+        width: 90%;
+        border-radius: 2rem;
+        padding: .5rem 1rem;
+        cursor: pointer;
+        border: none;
+        opacity: .8;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+        .bg-modal .modal-content form.input-group .submit-btn:hover {
+          opacity: 1; }
+    .bg-modal .modal-content .social-icons {
+      display: flex;
+      position: absolute;
+      height: 2rem;
+      top: 23rem;
+      left: 3.8rem;
+      text-align: center; }
+      .bg-modal .modal-content .social-icons img {
+        margin: 1rem;
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        border-radius: 50%; }
+  .bg-modal #login {
+    left: 0; }
+  .bg-modal #register {
+    left: 20rem; }

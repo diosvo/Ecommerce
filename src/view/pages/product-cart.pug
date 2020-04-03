@@ -1,0 +1,72 @@
+extends ../layout/layout-product-cart.pug
+
+block title
+    title Shopping Cart
+
+block main-content
+    section(id="cart" class="section-lo")
+        div.sc-text Shopping Cart
+        div.summary
+            div.sc-detail
+                table
+                    tr
+                        th.pd Product Details
+                        th Quantity
+                        th Price
+                        th Total
+                        th Remove
+                    tr 
+                        td 
+                            .product-details
+                                img(src="../images/shop/1.jpg", alt="")
+                                div
+                                    p Blue Dress
+                                    p $26
+                        td 
+                            input#quantity(type='number' name='quantity' min='1' max='10')
+                        td $26
+                        td $26
+                        td 
+                            span
+                                i.fa.fa-times
+
+                    tr 
+                        td 
+                            .product-details
+                                img(src="../images/shop/8.jpg", alt="")
+                                div
+                                    p High Heeled-Shoes
+                                    p $26
+                        td 
+                            input#quantity(type='number' name='quantity' min='1' max='10')
+                        td $26
+                        td $26
+                        td 
+                            span
+                                i.fa.fa-times
+
+            div.order-summary
+                div.top
+                    div.text Order Summary
+                    div.total 
+                        span Item: 2
+                        span $52
+                    p.shipping Shipping
+                    select
+                        option Standard Delivery - $7
+                        option Fast Delivery - $10
+                        option Safe and Fast Delivery - $15
+                    p.shipping Promo code
+                    input(placeholder="Enter Your Code")
+                    button APPLY 
+                div.total-cost 
+                    span Total Cost
+                    span $52
+                div.check-out
+                    button.linear Checkout
+
+        div.continue
+            a(href="../html/shop.html")
+                i.fa.fa-long-arrow-left  
+                    span Continue Shopping
+            

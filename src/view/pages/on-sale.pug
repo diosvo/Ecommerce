@@ -1,0 +1,58 @@
+extends ../layout/layout-onsale.pug
+
+block title
+    title On Sale
+
+block main-content
+    section(id="on-sale" class="section-lo")
+        .glide
+            .glide__track(data-glide-el='track')
+                ul.glide__slides
+                    li.glide__slide
+                        img(src="../images/shop/so3.png", alt="") 
+                    li.glide__slide 
+                        img(src="../images/shop/so1.png", alt="")
+                    li.glide__slide 
+                        img(src="../images/shop/so2.png", alt="")
+        
+        div.item-pro
+            div.sale-off-text Sale Off
+            ul.items.pro-container
+                //- Items
+                li.item
+                    img(src="../images/shop/1.jpg", alt="Item Prview")
+                    .item-name
+                        a(href="../html/product-view.html") Flower Blue Dress
+                        p.money $26 
+                        span $21
+                    button(onclick='cart()')
+                        i.fa.fa-cart-plus
+                li.item
+                    img(src="../images/shop/2.jpg", alt="Item Prview")
+                    .item-name
+                        a(href="../html/product-view.html") Beige Shirt                       
+                        p.money $30
+                        span $19
+                    button(onclick='cart()')
+                        i.fa.fa-cart-plus
+
+                li.item
+                    img(src="../images/shop/3.jpg", alt="Item Prview")
+                    .item-name
+                        a(href="../html/product-view.html") White Skirt
+                        p.money $49
+                        span $25
+                    button(onclick='cart()')
+                        i.fa.fa-cart-plus
+
+                li.item
+                    img(src="../images/shop/4.jpg", alt="Item Prview")
+                    .item-name
+                        a(href="../html/product-view.html") Grey High Heeled-Shoes
+                        p.money $29
+                        span $19
+                    button(onclick='cart()')
+                        i.fa.fa-cart-plus
+
+                
+

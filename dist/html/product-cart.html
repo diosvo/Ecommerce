@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="icon" href="../images/fav.ico"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/cart.css"/>
+    <script src="../js/alert.js"></script>
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <div class="title"> <span>FREE SHIPPING WORLDWIDE OVER $1000</span></div>
+    <div class="logo"><a href="index.html"><img src="../images/logo.png"/></a></div>
+    <header>
+      <nav id="menu">
+        <ul>
+          <li>       <a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="on-sale.html">On Sale </a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="user">
+        <ul> 
+          <li id="click-login"><a href="#">
+               Register/ Log in <i class="fa fa-user-circle-o"></i></a></li>
+          <li><a href="../html/product-cart.html"><i class="fa fa-shopping-cart">
+                <div class="cart-hover linear">
+                  <p>Cart</p>
+                </div></i></a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="bg-modal">
+      <div class="modal-content">
+        <div class="close">+</div>
+        <div class="button-box">
+          <div class="linear" id="btn"></div>
+          <button class="toogle-btn" type="button" onclick="login()">Log In</button>
+          <button class="toogle-btn" type="button" onclick="register()">Register</button>
+        </div>
+        <p>You can Log in/ Register with</p>
+        <div class="social-icons"><img src="../images/services/facebook.png" alt="facebook"/><img src="../images/services/gmail.png" alt="gmail"/><img src="../images/services/phone.png" alt="phone"/></div>
+        <form class="input-group" id="login">
+          <input class="input-field" type="text" placeholder="User ID" required="required"/>
+          <input class="input-field" type="password" placeholder="Password" required="required"/>
+          <input class="check-box" type="checkbox" name="checkbox"/><span>Remember me?</span>
+          <button class="submit-btn linear" type="submit">Log In</button>
+        </form>
+        <form class="input-group" id="register">
+          <input class="input-field" type="text" placeholder="User ID" required="required"/>
+          <input class="input-field" type="email" placeholder="Email" required="required"/>
+          <input class="input-field" type="password" placeholder="Password" required="required"/>
+          <input class="check-box" type="checkbox" name="checkbox"/><span>I agree to the term & conditions</span>
+          <button class="submit-btn linear" type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+    <script src="../js/popup.js"></script>
+    <section class="section-lo" id="cart">
+      <div class="sc-text">Shopping Cart</div>
+      <div class="summary">
+        <div class="sc-detail">
+          <table>
+            <tr>
+              <th class="pd">Product Details</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total</th>
+              <th>Remove</th>
+            </tr>
+            <tr> 
+              <td> 
+                <div class="product-details"><img src="../images/shop/1.jpg" alt=""/>
+                  <div>
+                    <p>Blue Dress</p>
+                    <p>$26</p>
+                  </div>
+                </div>
+              </td>
+              <td> 
+                <input id="quantity" type="number" name="quantity" min="1" max="10"/>
+              </td>
+              <td>$26</td>
+              <td>$26</td>
+              <td> <span><i class="fa fa-times"></i></span></td>
+            </tr>
+            <tr> 
+              <td> 
+                <div class="product-details"><img src="../images/shop/8.jpg" alt=""/>
+                  <div>
+                    <p>High Heeled-Shoes</p>
+                    <p>$26</p>
+                  </div>
+                </div>
+              </td>
+              <td> 
+                <input id="quantity" type="number" name="quantity" min="1" max="10"/>
+              </td>
+              <td>$26</td>
+              <td>$26</td>
+              <td> <span><i class="fa fa-times"></i></span></td>
+            </tr>
+          </table>
+        </div>
+        <div class="order-summary">
+          <div class="top">
+            <div class="text">Order Summary</div>
+            <div class="total"> <span>Item: 2</span><span>$52</span></div>
+            <p class="shipping">Shipping</p>
+            <select>
+              <option>Standard Delivery - $7</option>
+              <option>Fast Delivery - $10</option>
+              <option>Safe and Fast Delivery - $15</option>
+            </select>
+            <p class="shipping">Promo code</p>
+            <input placeholder="Enter Your Code"/>
+            <button>APPLY </button>
+          </div>
+          <div class="total-cost"> <span>Total Cost</span><span>$52</span></div>
+          <div class="check-out">
+            <button class="linear">Checkout</button>
+          </div>
+        </div>
+      </div>
+      <div class="continue"><a href="../html/shop.html"><i class="fa fa-long-arrow-left"> <span>Continue Shopping</span></i></a></div>
+    </section>
+    <footer> 
+      <div class="infor">
+        <p class="kidi">KIDI.</p>
+        <p class="add">Office Address: 633 Huynh Van Nghe Street, Bien Hoa City</p>
+        <p class="email">Email: diosvo@kidi.com</p>
+        <div class="social-media">
+          <ul>
+            <li><a href="https://www.facebook.com/diosvo"></a><i class="fa fa-facebook"></i></li>
+            <li><a href="#"></a><i class="fa fa-instagram"></i></li>
+            <li><a href="#"></a><i class="fa fa-pinterest"></i></li>
+            <li><a href="#"></a><i class="fa fa-youtube"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="company">
+        <p class="company">COMPANY</p><a href="#">Login  </a><a href="#">Register</a><a href="../html/shop.html">Our Collection</a><a href="../html/product-cart.html">Wishlists</a><a href="../html/product-cart.html">Checkouts</a>
+      </div>
+      <div class="email-add">
+        <p class="daily">DAILY OFFERS AND DISCOUNT</p>
+        <p class="daily-text">Now avai the best offers everyday. Huge discount. Wide range!</p>
+        <form>
+          <input id="fname" type="text" name="fname" placeholder="Your Email"/>
+          <button onclick="email()"><img src="../images/services/send.png"/></button>
+        </form>
+      </div>
+    </footer>
+    <div class="copyright"><i class="fa fa-copyright"> </i><span>2020 by Dios Vo</span></div>
+  </body>
+</html>

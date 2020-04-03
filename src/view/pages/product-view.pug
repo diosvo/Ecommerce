@@ -1,0 +1,54 @@
+extends ../layout/layout-product-view.pug
+
+block title
+    title Product View
+
+block main-content
+    section(id="product-view")
+        .container
+            .pro-slider
+                    .box
+                        .pro-img-area
+                            img(src="../images/shop/slider/bag.jpg", alt="")
+                            .more-img
+                                ul
+                                    li
+                                        img(src="../images/shop/slider/bag-2.jpg", alt="")
+                                    li
+                                        img(src="../images/shop/slider/bag-3.jpg", alt="")
+                                    li
+                                        img(src="../images/shop/slider/bag-4.jpg", alt="")
+                                    li
+                                        img(src="../images/shop/slider/bag-5.jpg", alt="")
+                        .infor
+                            .pro-infor.flex-hor
+                                p.brand KIDI.
+                                p.name Leather Tote Bag 
+                                p.name Off white
+                                p.price $169
+                                p.cart(onclick='cart()') Add to cart
+                            button(class="accordion mt") Delivery and Return 
+                            div.panel 
+                                p - Standard - $5
+                                p - Next Day   $7
+                                p - Same Day   $15
+                                p - Saturday   $7
+                                p Free returns on all VN orders - now extended up to 60 days.
+                            button(class="accordion") Design and fit
+                            div.panel 
+                                p Combining form with function, the Norton bag in off-white is your new go-to day staple piece this season. It’s made from smooth leather with a roomy interior. This style also boasts an internal zip pocket and silver-tone Reiss branding. 
+                                p - 100% leather 
+                                p - Two top handles 
+                                p - Silver-tone Reiss branding 
+                                p - Internal zip pocket 
+                                p - Snap-tab fastening
+                                p - Reiss branded metal letters 
+                                p - H: 34cm X W: 55cm X D: 20cm 
+                                p - Handle drop: 20cm
+                            button(class="accordion") Care and Farbic
+                            div.panel 
+                                p Composition - 100% Leather
+                                p Washcare - Do Not Wash
+
+    script(src="../js/pro-view.js")
+    script(src="../js/accordion.js")

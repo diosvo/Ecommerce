@@ -1,0 +1,33 @@
+section#benefit {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  width: 86%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; }
+  section#benefit .ben-container {
+    margin: 0 auto;
+    width: 33.333%;
+    display: flex; }
+    section#benefit .ben-container .ben-wrapped {
+      margin-left: 2rem;
+      display: float; }
+      section#benefit .ben-container .ben-wrapped img {
+        margin: 5px 0;
+        float: left;
+        width: 3rem;
+        height: 3rem;
+        clear: left; }
+      section#benefit .ben-container .ben-wrapped div.ben-text {
+        float: right;
+        margin: 1rem;
+        clear: right; }
+        section#benefit .ben-container .ben-wrapped div.ben-text h4 {
+          text-transform: uppercase;
+          font-family: sans-serif;
+          letter-spacing: 1px;
+          font-size: 12px; }
+        section#benefit .ben-container .ben-wrapped div.ben-text p {
+          margin-top: 9px;
+          font-size: 12px;
+          color: #cccccc; }

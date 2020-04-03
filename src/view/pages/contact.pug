@@ -1,0 +1,25 @@
+extends ../layout/layout-contact.pug
+
+block title
+    title Contact
+
+block main-content
+    section(id="contact" class="section-lo")
+        div.ct-text Contact Us!
+        div.contact
+            div.ct-left
+                i.fa.fa-building
+                    span.add 633 Huynh Van Nghe Street, Bien Hoa City, Dong Nai Province
+                i.fa.fa-envelope-o
+                    span.mail support@kidi.com
+                div#map
+            div.ct-right
+                input(type='text' id="fname" name="firstname" placeholder="Name")
+                input(type='text' placeholder="Email")
+                textarea Your Message..
+
+                button.linear(onclick='submit()') SUBMIT
+
+                script(src='../js/map.js')
+                script(src='../js/alert.js')
+                script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB52DxXCMSpFkMny4liuZO8V24IrXFoRx8&callback=initMap' async='' defer='')

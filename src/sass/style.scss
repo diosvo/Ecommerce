@@ -1,0 +1,166 @@
+@import 'navbar.scss';
+@import 'benefit.scss';
+@import 'footer.scss';
+@import 'cpr.scss';
+@import 'variable.scss';
+@import 'login.scss';
+
+section#overview {
+    margin-bottom: 2rem;
+    height       : 750px;
+    position     : relative;
+
+    div.image {
+        position: absolute;
+        top     : 0;
+        left    : 5.7rem;
+    }
+
+    div.rec {
+        width   : 700px;
+        height  : 500px;
+        border  : .1px solid $main_color;
+        position: absolute;
+        top     : 7rem;
+        left    : 29.7rem;
+
+    }
+
+    div.text {
+        position: absolute;
+        top     : 16rem;
+        left    : 34.7rem;
+        h1 {
+            animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
+            font-family   : 'Playfair Display';
+            font-size     : 3.5rem;
+            letter-spacing: 2px;
+
+            span {
+                font-size: 2.5rem;
+                color    : #cccccc;
+            }
+        }
+
+        p.collection {
+            margin: .3rem 0 0 5rem;
+        }
+
+        p.button {
+            margin-top : 1.3rem;
+            margin-left: 5rem;
+
+            a {
+                font-family    : 'Playfair Display';
+                color          : black;
+                border         : 1px solid #cccccc;
+                font-size      : 14px;
+                text-decoration: none;
+                padding        : .5rem 1rem;
+
+                &:hover {
+                    color           : white;
+                    background-color: black;
+                    transition      : .3s background-color ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+section#product {
+    width : 86%;
+    height: 105rem;
+    margin: 0 auto;
+
+    p:last-child {
+        a {
+            padding-bottom : 1rem 0;
+            border-bottom  : .5px solid $lighten_dark;
+            color          : $lighten_dark;
+            text-decoration: none;
+            font-family    : sans-serif;
+            text-transform : uppercase;
+            letter-spacing : .5px;
+            font-weight    : bold;
+            font-size      : 12px;
+        }
+    }
+
+    #title {
+        .pro-title {
+            font-family   : 'Playfair Display';
+            letter-spacing: .5px;
+            font-size     : 4rem;
+        }
+
+        p {
+            font-family: 'Noto Sans HK'
+        }
+    }
+
+    .top {
+        position: relative;
+        width   : 100%;
+        height  : 42rem;
+        margin  : 2rem 0;
+
+        .ct-right {
+            position: absolute;
+            top     : 1rem;
+            right   : 0;
+            img {
+                width      : 70%;
+                height     : 70%;
+                margin-left: 5rem;
+            }
+        }
+
+        .ct-left {
+            position: absolute;
+            top     : 12rem;
+            left    : 0;
+
+            img {
+                margin-left: 4rem;
+                width      : 80%;
+                height     : 80%;
+            }
+        }
+
+        .content-left-top,
+        .content-left-bot,
+        .content-right-top,
+        .content-right-bot {
+            position: absolute;
+
+            h2 {
+                font-family   : 'Playfair Display';
+                font-size     : 2rem;
+                text-transform: uppercase;
+                font-weight   : 300;
+            }
+        }
+
+        .content-left-top {
+            top : 55%;
+            left: 36%;
+        }
+
+        .content-right-top {
+            top : 10%;
+            left: 55%;
+        }
+
+        .content-left-bot {
+            top : 43%;
+            left: 37%;
+
+        }
+
+        .content-right-bot {
+            top : 10%;
+            left: 54%;
+        }
+    }
+}

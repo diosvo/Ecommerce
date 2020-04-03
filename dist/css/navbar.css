@@ -1,0 +1,146 @@
+@import url(..font/NotoSansHK/style.css);
+@import url(..font/Playfair/style.css);
+.linear {
+  background: linear-gradient(60deg, #667eea, #764ba2); }
+
+.section-lo {
+  width: 86%;
+  margin: 0 auto;
+  font-family: 'Playfair Display'; }
+
+.ct-right {
+  float: right;
+  width: 45%;
+  clear: both; }
+
+.ct-left {
+  float: left;
+  width: 45%; }
+
+.flex-hor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+body {
+  font-family: 'Noto Sans HK', sans-serif;
+  font-weight: 300; }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+div.title {
+  font-family: sans-serif;
+  width: 86%;
+  height: 1.5rem;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem; }
+  div.title span {
+    color: white;
+    letter-spacing: .5px;
+    font-size: 10px; }
+
+div.logo {
+  width: 86%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; }
+  div.logo a:hover {
+    cursor: pointer; }
+  div.logo img {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 150px;
+    height: 70px; }
+
+header {
+  font-family: 'Playfair Display', sans-serif;
+  width: 86%;
+  margin: 0 auto;
+  background: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header nav#menu {
+    margin: 0;
+    margin-left: 23rem;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center; }
+    header nav#menu ul {
+      margin: 0; }
+      header nav#menu ul li {
+        display: inline;
+        list-style-type: none; }
+        header nav#menu ul li a {
+          padding: 16px 10px;
+          text-decoration: none;
+          color: #667eea;
+          font-size: 14px;
+          text-transform: uppercase; }
+          header nav#menu ul li a:hover {
+            opacity: .5;
+            text-decoration: none; }
+  header div.user {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    header div.user ul {
+      margin: 0; }
+      header div.user ul li {
+        display: inline;
+        list-style-type: none;
+        text-align: center;
+        margin: 0 10px; }
+        header div.user ul li:hover {
+          cursor: pointer; }
+        header div.user ul li a {
+          color: black;
+          font-size: 15px;
+          text-decoration: none; }
+          header div.user ul li a:hover {
+            text-decoration: underline; }
+            header div.user ul li a:hover i.fa {
+              font-size: 1.2rem; }
+          header div.user ul li a i.fa {
+            margin-left: 5px;
+            position: relative; }
+            header div.user ul li a i.fa .cart-hover {
+              display: none;
+              position: absolute;
+              top: 2rem;
+              left: -2.2rem;
+              height: 1.5rem;
+              width: 4rem;
+              color: white;
+              border-radius: 1rem; }
+              header div.user ul li a i.fa .cart-hover::after {
+                content: '';
+                position: absolute;
+                left: 2.6rem;
+                top: -.5rem;
+                width: 0;
+                height: 0;
+                border-left: .3rem solid transparent;
+                border-bottom: 0.5rem solid #764ba2;
+                border-right: .3rem solid transparent; }
+              header div.user ul li a i.fa .cart-hover p {
+                padding: .2rem;
+                letter-spacing: 1px;
+                font-size: 15px; }
+        header div.user ul li i.fa-shopping-cart:hover .cart-hover {
+          display: block; }

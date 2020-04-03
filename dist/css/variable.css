@@ -1,0 +1,24 @@
+@import url(..font/NotoSansHK/style.css);
+@import url(..font/Playfair/style.css);
+.linear {
+  background: linear-gradient(60deg, #667eea, #764ba2); }
+
+.section-lo {
+  width: 86%;
+  margin: 0 auto;
+  font-family: 'Playfair Display'; }
+
+.ct-right {
+  float: right;
+  width: 45%;
+  clear: both; }
+
+.ct-left {
+  float: left;
+  width: 45%; }
+
+.flex-hor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
